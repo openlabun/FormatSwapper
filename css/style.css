@@ -1,0 +1,119 @@
+body{
+   background-color: #393646;
+   margin: 0;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   height: 100vh;
+}
+
+.titles{
+	display: flex;
+	width: 100%;
+	justify-content: center;
+	margin-top: 10px;
+}
+
+.main-title{
+	color: #F4EEE0;
+	font-family: 'Indie Flower', cursive;
+	font-size: 60px;
+	text-shadow: #6D5D6E 3px 3px 3px;
+}
+
+.container {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   margin-top: 10px;
+}
+
+.areas{
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+	max-width: 870px;
+}
+
+.area::-webkit-scrollbar {
+  background-color: #4F4557;
+  border-radius: 0 9px 9px 0;
+}
+.area::-webkit-scrollbar-thumb {
+  background-color: #393646;
+  border-radius: 20px;
+  border: 3px solid transparent;
+  background-clip: padding-box;
+}
+
+
+.area{
+	resize: none;
+	width: 95%;
+	height: 285px;
+	background-color: #6D5D6E;
+	outline: none;
+	border: none;
+	-webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    padding: 15px;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 15px;
+    color: #F4EEE0;
+}
+
+.centered-button {
+   display: flex;
+   justify-content: center;
+   margin-top: 20px;
+}
+
+.format-button {
+   padding: 10px 20px;
+   font-family: 'Roboto Mono', monospace;
+   font-size: 16px;
+   background-color: #6D5D6E;
+   color: white;
+   border: 2px solid #F4EEE0;
+   border-radius: 5px;
+   cursor: pointer;
+}
+
+.format-button:hover {
+   color: #6D5D6E;
+   background-color: #F4EEE0;
+   border: 2px solid #6D5D6E;
+   border-radius: 5px;
+}
+
+.dropdown-container {
+   text-align: center;
+   width: 48%;
+   
+}
+
+.dropdown {
+   display: flex;
+	justify-content: space-between;
+	width: 102%;
+	max-width: 870px;
+   padding: 8px;
+   font-size: 16px;
+   border: 1px solid #6D5D6E;
+   border-radius: 5px;
+   background-color: #F4EEE0; 
+   color: #6D5D6E; 
+   font-family: 'Roboto Mono', monospace;
+   font-weight: bold;
+   text-align: center;
+}
+
+.dropdown option {
+   background-color: #F4EEE0; 
+   color: #6D5D6E; 
+   font-family: 'Roboto Mono', monospace; 
+   font-weight: bold;
+   text-align: center;
+}

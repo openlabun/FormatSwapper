@@ -1,0 +1,20 @@
+{
+  "name": "toml-js",
+  "main": "lib/toml.js",
+  "ignore": [
+    "test",
+    "public",
+    "node_modules"
+  ],
+  "homepage": "https://github.com/alexanderbeletsky/toml-js",
+  "_release": "fd90ede05f",
+  "_resolution": {
+    "type": "branch",
+    "branch": "master",
+    "commit": "fd90ede05f44489307b7d7c0b568954e7f1f4dc5"
+  },
+  "_source": "https://github.com/alexanderbeletsky/toml-js.git",
+  "_target": "*",
+  "_originalSource": "toml-js",
+  "_direct": true
+}

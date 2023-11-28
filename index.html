@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Format Swapper</title>
+	<link rel="stylesheet" href="css/style.css">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Roboto+Mono&display=swap" rel="stylesheet">
+</head>
+<body>
+	<div class="titles">
+		<h1 class="main-title">FORMAT SWAPPER</h1>	
+	</div>
+	<div class="areas">
+		<div class="dropdown-container">
+			 <select id="from-dropdown" class="dropdown">
+				<option value="undefined">SELECT FORMAT</option>
+				<option value="yaml">FROM: YAML</option>
+				<option value="toml">FROM: TOML</option>
+				<option value="csv">FROM: CSV</option>
+				<option value="json">FROM: JSON</option>
+				<option value="xml">FROM: XML</option>
+			 </select>
+			<textarea class="area" id="from-area"></textarea>
+		</div>
+		<div class="dropdown-container">
+			 <select id="to-dropdown" class="dropdown">
+				<option value="undefined">SELECT FORMAT</option>
+				<option value="yaml">TO: YAML</option>
+				<option value="toml">TO: TOML</option>
+				<option value="csv">TO: CSV</option>
+				<option value="json">TO: JSON</option>
+				<option value="xml">TO: XML</option>
+			 </select>
+			<textarea class="area" id="to-area" readonly></textarea>
+		</div>
+	</div>
+	<div class="centered-button">
+      <button class="format-button" id="button">Swap Format</button>
+   </div>
+   <script src="
+https://cdn.jsdelivr.net/npm/xml-js@1.6.11/dist/xml-js.min.js
+"></script>
+<script src="
+https://cdn.jsdelivr.net/npm/@ltd/j-toml@1.38.0/index.min.js
+"></script>
+	<script src="https://cdn.jsdelivr.net/npm/json-2-csv@5.0.1/lib/converter.min.js"></script>
+   <script src="js/js-yaml.min.js"></script>
+   <script type="text/javascript" src="bower_components/toml-js/lib/toml.js"></script>
+   <script src="js/json.js"></script>
+   <script src="js/csv.js"></script>
+   <script src="js/xml.js"></script>
+   <script src="js/index.js"></script>
+</body>
+</html>
