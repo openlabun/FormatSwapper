@@ -9,7 +9,9 @@ function csvJSON(csv) {
         const currentline = lines[i].split(',')
 
         for (let j = 0; j < headers.length; j++) {
-            obj[headers[j]] = currentline[j]
+            var line = currentline[j];
+            line = line.replaceAll('"','');
+            obj[headers[j]] = line
         }
         result.push(obj)
     }
