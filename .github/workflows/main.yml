@@ -26,7 +26,7 @@ jobs:
           cd /home/proyecto/FormatSwapper/
           git pull origin main
           git status
-          docker stop formatswapper-app
-          docker rm formatswapper-app
-          docker build -t formatswapper .
-          docker run --restart unless-stopped --name formatswapper -p 5005:80 -d formatswapper
+          docker stop formatswapper
+          docker rm formatswapper
+          docker build -t formatswapper-image .
+          docker run --restart unless-stopped --name formatswapper -p 5005:80 -d formatswapper-image
